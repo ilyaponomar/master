@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.466);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  flex-wrap: nowrap;
+
+}
+
+
+.menu_items {
+
+  /* border:1px solid red; */
+
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 60%;
+
+
+
+}
+
+.menu_items a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 2px;
+  border-radius: 1px;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.menu_items a:hover {
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+  background-color: white;
+  color: black;
+}
+
+.insta-logo {
+  justify-self: flex-start;
+  position: sticky;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+.insta-logo img {
+  height: 70px;
+  width: 70px;
+
+}
+
+/* .insta-logo img a:hover{
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(255, 255, 255, 0.19);
+} */
+
+body .insta-logo {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+header::after {
+
+  content: "";
+  background-image: url("../img/order.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.header-wrapper {
+  /* border: 1px solid red; */
+  /* height: 280px; */
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  justify-content: center;
+}
+
+.company_name {
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  height: 150px;
+  width: auto;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+  color: white;
+
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+.page_header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 150px;
+
+}
+
+
+.page_header {
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: 'Heebo', sans-serif;
+
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(124, 124, 124);
+}
+
+.wrapper div {
+  max-width: 50%;
+  height: auto;
+  margin: 10px;
+}
+
+/* .image_button {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 5px;
+ 
+text-align: center;
+  width: 30%;
+ 
+} */
+
+.wrapper img {
+  object-fit: cover;
+  object-position: center ;
+  max-width: 45%;
+
+  position: relative;
+}
+
+.wrapper img:hover {
+  filter: brightness(0.5);
+}
+
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    /* width: 100%; */
+    flex-direction: column;
+    padding:0;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: baseline;
+  }
+
+  .wrapper div,
+  .wrapper img {
+    max-width: 100%;
+  }
+  .wrapper img{ padding-left:0;
+    margin: 0;}
+
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  padding-top: 5px;
+  color: whitesmoke;
+  height: auto;
+
+
+}
+
+.adress,
+.order,
+.parnters {
+
+  align-content: center;
+
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: whitesmoke;
+}
+
+.order {
+  padding: 25px;
+  width: 60%;
+  text-align: center;
+}
+
+.partners {
+  padding-top: 25px;
+  font-size: 100%;
+}
+
+
+
+footer a {
+
+  color: whitesmoke;
+}
+
+.adress ul {
+  list-style-type: none;
+  padding-top: 13px;
+
+
+
+}

@@ -91,9 +91,8 @@ body .insta-logo {
 }
 
 header::after {
-
   content: "";
-  background-image: url("../img/order.jpg");
+  background-image: url("../img/pages_header_bg.jpg");
   background-size: cover;
   opacity: 0.5;
   top: 0;
@@ -167,7 +166,7 @@ h2 {
 
   justify-content: left;
   align-items: center;
-  background-color: rgb(124, 124, 124);
+  background-color: rgb(121, 121, 121);
 }
 
 .wrapper div {
@@ -175,7 +174,21 @@ h2 {
   height: auto;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding:10px;
+  color: white;
+  align-self: start;
 }
+
+  .wrapper div a:hover {
+    
+    color:rgb(0, 0, 0); 
+      }
+  .wrapper div a {
+    color:white;
+    font-style: italic;
+  }
+
 
 .bold_font{
 font-weight: bold;
@@ -213,6 +226,9 @@ text-align: center;
     align-content: flex-start;
     align-items: baseline;
   }
+
+
+  
 
   .wrapper div,
   .wrapper img {

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -145,16 +146,7 @@ h2 {
 
 }
 
-/* когда были коартинки в меню */
-/* .nav-wrapper img {
-  transition: transform .2s;
 
-  width: 110px;
-  height: 70px;
-  margin: 0 auto;
-  flex-wrap: nowrap;
-  border-radius: 6px;
-}
 
 /* Новые кнопки меню */
 
@@ -167,7 +159,7 @@ h2 {
   font-weight: bold;
   padding: 10px;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
+  
   transition-duration: 0.4s;
   cursor: pointer;
 
@@ -182,7 +174,7 @@ h2 {
   box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(255, 255, 255, 0.19);
 }
 
-/* slideshow start */
+
 * {
   box-sizing: border-box
 }
@@ -198,8 +190,8 @@ img {
 /* Slideshow container */
 .slideshow-container {
   max-width: 700px;
-  /* max-width: 70%; */
-  /* max-height: 70%; */
+ 
+  
   position: relative;
   margin: auto;
   background-color: #7D7D7D;
@@ -228,7 +220,7 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -313,79 +305,61 @@ text */
   }
 }
 
-/* slideshow end */
+/* slideshow end______________________________________________________________________________ */
 
-/* article part */
-.bra,
-.cosmetics,
-.perfume {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  background-color: #7D7D7D;
-  background-size: cover;
-  padding-top: 5px;
-
-  height: auto;
-  /* margin-top:10px; */
+.main_wrapper{
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+flex-wrap: wrap;
+width: 100%;
 }
 
+.cosmetics,.perfume,.underwear{
+  display:flex;
 
-.bra img,
-.perfume img,
-.cosmetics img {
-  /* max-width: 200px; */
-  height: auto;
+  justify-content: space-between;  
+
+}
+
+.cosmetics_img,.perfume_img,.underwear_img{
+display:flex;
+flex-direction: column;
+width: 50%;
+flex-wrap: wrap;
+box-sizing: border-box;
+max-width: 500px;
+object-fit: cover;
+border: 1px solid orange;
+}
+
+.main_wrapper img {
+  /* position: absolute; */
   object-fit: cover;
-  width: 200px;
-  height: 210px;
-  border: 1px solid silver;
+width: 200px;
 }
 
-.bra img:hover,
-.perfume img:hover,
-.cosmetics img:hover {
-  box-shadow: 10px 10px 5px silver;
+
+#text_cosmetics,#text_perfume,#text_underwear{
+width: 50%;
+border: 1px solid red;
 }
 
-.bra_img,
-.cosmetics_img,
-.perfume_img {
-  width: 60%;
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
 
-#text_underwear,
-#text_perfume,
-#text_cosmetics {
-  /* border: 1px solid red; */
-  width: 40%;
-  align-content: center;
-  text-align: left;
-  font-size: larger;
-  color: white;
-}
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
+
+
+
+
+
+
+
+
+
+
+
+/* article part ______________________________________________________________________________________*/
+
 
 #myBtn:hover {
   background-color: rgb(0, 0, 0);
@@ -402,16 +376,12 @@ footer {
   padding-top: 5px;
   color: whitesmoke;
   height: auto;
-
-
 }
+
 
 .adress,
 .order,.parnters {
-
   align-content: center;
-  
- 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
   color: whitesmoke;
@@ -431,7 +401,6 @@ footer {
 
 
 footer a {
-
   color: whitesmoke;
 }
 
